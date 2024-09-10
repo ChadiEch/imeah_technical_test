@@ -16,21 +16,21 @@ Before running the project, ensure you have the following installed:
 To clone this repository, run the following command:
 
 ```bash
-git clone https://github.com/ChadiEch/imeah_technical_test.git
+#git clone https://github.com/ChadiEch/imeah_technical_test.git
 
 ### 2. Navigate to the project directory
 
 Once cloned, navigate into the project directory:
 
 ```bash
-cd imeah_technical_test
+#cd imeah_technical_test
 
 ### 3. Build and start the Docker containers
 
 To build and run the application with Docker Compose, use the following command:
 
 ```bash
-docker-compose up --build
+#docker-compose up --build
 
 ### 4. Access the application
 
@@ -44,6 +44,6 @@ Frontend: http://localhost:3000
 To stop the running containers, simply press CTRL + C in the terminal or run:
 
 ```bash
-docker-compose down
+#docker-compose down
 
 docker-compose up --build
