@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ChadiEch/imeah-app/static/css/main.d68181bb.css",
+    "main.js": "/ChadiEch/imeah-app/static/js/main.ad3809f5.js",
+    "index.html": "/ChadiEch/imeah-app/index.html",
+    "main.d68181bb.css.map": "/ChadiEch/imeah-app/static/css/main.d68181bb.css.map",
+    "main.ad3809f5.js.map": "/ChadiEch/imeah-app/static/js/main.ad3809f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d68181bb.css",
+    "static/js/main.ad3809f5.js"
+  ]
+}

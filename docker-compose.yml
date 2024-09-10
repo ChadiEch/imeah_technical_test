@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  backend:
+    build: /imeah-backend
+    ports:
+      - '5000:5000'
+    environment:
+      - DATABASE_URL=postgresql://postgres:Boyka@db:5432/imeah_db
+    depends_on:
+      - db
+    command: >
+      sh -c "npm install &&
+            npx prisma generate &&
+            ./wait-for-it.sh db:5432 -- npx prisma migrate deploy &&
+            npm run start"
+
+
+  frontend:
+    build: /imeah-app
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Boyka
+      POSTGRES_DB: imeah_db
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
