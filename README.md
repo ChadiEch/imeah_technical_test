@@ -15,7 +15,7 @@ Before running the project, ensure you have the following installed:
 
 To clone this repository, run the following command:
 
-```bash
+
 #git clone https://github.com/ChadiEch/imeah_technical_test.git
 
 ### 2. Navigate to the project directory
