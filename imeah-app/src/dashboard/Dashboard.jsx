@@ -107,6 +107,7 @@ const Dashboard = () => {
         </Button>
         {categories.map((category) => (
           <Button
+           className='category_button'
             key={category.id}
             variant={selectedCategory === category.id ? 'contained' : 'outlined'}
             color="primary"
@@ -189,7 +190,7 @@ const Dashboard = () => {
             <Typography>{selectedItem.description}</Typography>
           </DialogContent>
           <DialogActions>
-            <Button onClick={handleCloseDialog} color="primary">
+            <Button onClick={handleCloseDialog} color="primary" className='exit_button'>
               Exit
             </Button>
           </DialogActions>

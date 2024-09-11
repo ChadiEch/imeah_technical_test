@@ -14,6 +14,9 @@ body{
   justify-content: space-around;
   margin-top: 20px;
 }
+.category_button:hover{
+color: white;
+}
 
 .card {
   background-color: #f4f4f4;
@@ -67,4 +70,8 @@ body{
   text-align: center;
   margin-top: 10px;
   flex-shrink: 0;
+}
+
+.exit_button:hover{
+  color: white;
 }
