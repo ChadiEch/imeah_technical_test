@@ -87,8 +87,8 @@ const Dashboard = () => {
   };
 
   const handleLogout = () => {
-    localStorage.clear(); // Clear localStorage to log out the user
-    navigate('/login'); // Redirect to the login page
+    localStorage.clear(); 
+    navigate('/'); 
   };
 
   return (
